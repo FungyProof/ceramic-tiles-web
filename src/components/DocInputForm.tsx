@@ -6,7 +6,7 @@ import {
   InputLeftAddon,
   InputRightElement,
 } from '@chakra-ui/react'
-import { navigate } from '@reach/router'
+import { useHistory } from "react-router-dom";
 import React from 'react'
 import { useForm } from 'react-hook-form'
 
@@ -19,7 +19,10 @@ interface DocInputFormProps {
 
 const DocInputForm: React.SFC<DocInputFormProps> = ({ isLoading, docId, baseBorder = 0 }) => {
   const { handleSubmit, register, errors } = useForm()
-  const onSubmit = (values: any) => navigate(`/document/${values.docId}`)
+
+  let history = useHistory();
+
+  const onSubmit = (values: any) => history.push(`/document/${values.docId}`)
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>

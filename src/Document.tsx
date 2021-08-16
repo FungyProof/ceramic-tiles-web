@@ -11,7 +11,7 @@ import {
   Text,
   useColorMode,
 } from '@chakra-ui/react'
-import { Link, RouteComponentProps } from '@reach/router'
+import { Link, RouteProps, useParams } from "react-router-dom";
 import React, { useEffect, useState } from 'react'
 import { BiErrorCircle } from 'react-icons/bi'
 import Header from './components/Header'
@@ -20,13 +20,14 @@ import useCommit from './hooks/useCommit'
 import useDoc from './hooks/useDoc'
 import { RemoteComponent } from './RemoteComponent'
 
-interface DocProps extends RouteComponentProps {
+interface DocProps extends RouteProps {
   docId?: string
   commitId?: string
 }
 
 const Document = (props: DocProps) => {
-  const { docId } = props
+  let { docId } = useParams<{docId: string}>()
+  console.log(docId)
   const [commitId, setCommitId] = useState<string>()
   const [docContent, setDocContent] = useState<Object>()
 

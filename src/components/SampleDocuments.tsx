@@ -11,7 +11,7 @@ import {
   Text,
   useDisclosure,
 } from '@chakra-ui/react'
-import { navigate } from '@reach/router'
+// import { useHistory } from '@reach/router'
 import * as React from 'react'
 
 const SampleDocuments = () => {
@@ -32,12 +32,12 @@ const SampleDocuments = () => {
               <Box
                 p={3}
                 borderRadius={5}
-                onClick={() => {
-                  navigate(
-                    `/document/k3y52l7qbv1frxjdr9qpn9ldvbxb0jg4eig7wtjkdu6gk84vyazw9j4txf4o6d2io`
-                  )
-                  onClose()
-                }}
+                // onClick={() => {
+                //   navigate(
+                //     `/document/k3y52l7qbv1frxjdr9qpn9ldvbxb0jg4eig7wtjkdu6gk84vyazw9j4txf4o6d2io`
+                //   )
+                //   onClose()
+                // }}
                 borderWidth={3}
               >
                 <Text fontWeight="bold" mb={3} fontSize="lg">
@@ -51,12 +51,12 @@ const SampleDocuments = () => {
               <Box
                 p={3}
                 borderRadius={5}
-                onClick={() => {
-                  navigate(
-                    `/document/kjzl6cwe1jw14bek5i7rcr1q9byw61w4rswrhmvja0kfos89ty0notx0vh7kx3b`
-                  )
-                  onClose()
-                }}
+                // onClick={() => {
+                //   navigate(
+                //     `/document/kjzl6cwe1jw14bek5i7rcr1q9byw61w4rswrhmvja0kfos89ty0notx0vh7kx3b`
+                //   )
+                //   onClose()
+                // }}
                 borderWidth={3}
               >
                 <Text fontWeight="bold" mb={3} fontSize="lg">
@@ -70,12 +70,12 @@ const SampleDocuments = () => {
               <Box
                 p={3}
                 borderRadius={5}
-                onClick={() => {
-                  navigate(
-                    `/document/kjzl6cwe1jw14anzfvjyint54cf2m7lb04xnsmsdem9emhvgn816hzecvzqa65g`
-                  )
-                  onClose()
-                }}
+                // onClick={() => {
+                //   navigate(
+                //     `/document/kjzl6cwe1jw14anzfvjyint54cf2m7lb04xnsmsdem9emhvgn816hzecvzqa65g`
+                //   )
+                //   onClose()
+                // }}
                 borderWidth={3}
               >
                 <Text fontWeight="bold" mb={3} fontSize="lg">

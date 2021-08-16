@@ -13,7 +13,7 @@ import {
   Thead,
   Tr,
 } from '@chakra-ui/react'
-import { Link as ReachLink, RouteComponentProps } from '@reach/router'
+import { Link as ReachLink, RouterProps } from "react-router-dom";
 import React from 'react'
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'
 import { usePagination } from 'use-pagination-firestore'
@@ -22,7 +22,7 @@ import db from './firebase'
 import dayjs from 'dayjs'
 import Hero from './components/Hero'
 
-interface DocListProps extends RouteComponentProps {}
+interface DocListProps extends RouterProps {}
 
 const DocumentList = (props: DocListProps) => {
   const {

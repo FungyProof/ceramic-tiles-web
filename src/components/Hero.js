@@ -57,7 +57,7 @@ const Hero = () => {
           Browse the Ceramic network and <br />
           experience the emergence of a new interaction paradigm.
         </chakra.p>
-        <chakra.p
+        {/* <chakra.p
           mb={6}
           fontSize={{ base: 'lg', md: 'xl' }}
           color="gray.500"
@@ -71,7 +71,7 @@ const Hero = () => {
             Now live on Ceramic mainnet!
           </chakra.span>{" "}
            🤩 🎉
-        </chakra.p>
+        </chakra.p> */}
         <Center>
           <DocInputForm baseBorder={1} />
         </Center>
